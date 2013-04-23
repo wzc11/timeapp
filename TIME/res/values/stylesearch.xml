@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- edittext -->
+<style name="edittext_style">
+<item name="android:background">@drawable/searchinput</item>
+</style>
+</resources>

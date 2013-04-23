@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#EAEAEA"
+    android:orientation="vertical" >
+       <RelativeLayout
+        android:id="@+id/indextop"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"   
+       >   
+        <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:src="@drawable/yuedutab"
+        android:scaleType="centerCrop"
+         />
+        <Button
+      		android:id="@+id/backbtn"
+     		android:layout_width="37dp"
+ 		    android:layout_height="35dp"
+ 		    android:layout_alignParentLeft="true"
+ 		    android:background="@drawable/back1"
+ 		    android:layout_centerVertical="true"
+ 		    android:gravity="center_horizontal"
+      />
+     </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+      
+        android:background="#EAEAEA"
+        android:gravity="center"
+        android:orientation="horizontal" > 
+		<EditText
+		    android:id="@+id/searchtext"
+		    android:singleLine="true"
+			android:background="@null"
+		    android:layout_width="fill_parent"
+		    android:layout_height="40dp"
+		    android:layout_marginLeft="25dp"
+		    android:focusableInTouchMode="true"
+		    android:layout_toLeftOf="@+id/search"
+		    />
+		<ImageView
+		    android:src="@drawable/searchinput"
+		    android:layout_width="fill_parent"
+		    android:layout_height="40dp"
+		    android:layout_marginLeft="15dp"
+		    android:scaleType="centerCrop"
+		    android:layout_toLeftOf="@+id/search"
+		    />
+		<Button
+		    android:id="@+id/search"
+		    android:layout_width="42dp"
+		    android:layout_height="36dp"
+		    android:layout_marginRight="10dp"
+		    android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+		    android:background="@drawable/searchbtn" />
+	
+	</RelativeLayout>
+	
+	
+    
+	 <RelativeLayout
+           android:layout_marginTop="15dp"
+           android:layout_width="fill_parent"
+    	   android:layout_height="fill_parent"
+    	   >
+	<ListView
+  		android:id="@+id/searchlist"
+		android:layout_width="fill_parent"   
+   		android:layout_height="250dp"
+   		android:background="@drawable/list_bg"
+   		android:fadingEdge="none"
+   		android:layout_gravity="center"
+   		android:layout_marginLeft="20dp"
+   		android:layout_marginRight="20dp"
+   		android:layout_marginBottom="15dp"
+   		android:layout_alignParentTop="true"
+   		android:cacheColorHint="#00000000"
+   		android:layout_above="@+id/botbtn"   
+   		android:divider="#C1CDCD"
+  		android:dividerHeight="1px" 		
+  		android:visibility="gone" 
+  	></ListView> 
+		
+  	<TabHost android:id="@id/android:tabhost"
+		android:layout_height="350dp"
+		android:layout_width="fill_parent"
+		android:layout_marginLeft="20dp"
+   		android:layout_marginRight="20dp"
+   		android:layout_marginBottom="15dp"
+		android:layout_alignParentTop="true"
+		android:layout_above="@+id/botbtn"
+		>
+		<LinearLayout 
+    		android:orientation="vertical"
+    		android:layout_width="fill_parent"
+    		android:layout_height="fill_parent"
+    		>
+    		
+		 
+    	
+  		<TabWidget android:id="@id/android:tabs"
+  			android:layout_height="wrap_content"
+  			android:layout_width="fill_parent"
+  			android:gravity="left"
+  			android:visibility="gone"
+  			/>
+  		
+  		<RadioGroup 
+            android:gravity="center" 
+            android:orientation="horizontal" 
+            android:id="@+id/main_radio" 
+            android:background="#EAEAEA" 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content">
+         
+         <RadioButton 
+             	android:layout_width="fill_parent" 
+             	android:layout_height="fill_parent"
+                android:id="@+id/radio_button1" 
+                android:tag="radio_button1" 
+                android:background="@drawable/tabb1"
+                android:button="@null"
+                android:layout_weight="1"
+          />
+  		  <RadioButton 
+             	android:layout_width="fill_parent" 
+             	android:layout_height="fill_parent"
+                android:id="@+id/radio_button2" 
+                android:tag="radio_button2" 
+                android:background="@drawable/tabb2"
+                android:button="@null"
+                android:layout_weight="1"
+          />  
+  		  <RadioButton 
+             	android:layout_width="fill_parent" 
+             	android:layout_height="fill_parent"
+                android:id="@+id/radio_button3" 
+                android:tag="radio_button3" 
+                android:background="@drawable/tabb3"
+                android:button="@null"
+                android:layout_weight="1"
+          />   
+  		  <RadioButton 
+             	android:layout_width="fill_parent" 
+             	android:layout_height="fill_parent"
+                android:id="@+id/radio_button4" 
+                android:tag="radio_button4" 
+                android:background="@drawable/tabb4"
+                android:button="@null"
+                android:layout_weight="1"
+          />     
+          <RadioButton 
+             	android:layout_width="fill_parent" 
+             	android:layout_height="fill_parent"
+                android:id="@+id/radio_button5" 
+                android:tag="radio_button5" 
+                android:background="@drawable/tabb5"
+                android:button="@null"
+                android:layout_weight="1"
+          />   
+  		    
+         
+        </RadioGroup>
+  		
+
+               
+  		
+  		<FrameLayout android:id="@id/android:tabcontent"
+  			android:layout_height="fill_parent"
+  			android:layout_width="fill_parent"
+  			android:layout_marginTop="10dp"
+  			> 
+  			
+			<LinearLayout android:id="@+id/list1"	
+  				android:layout_width="fill_parent"
+  				android:layout_height="fill_parent"
+  				android:orientation="vertical"
+  				>
+
+  				<ListView
+  				    android:id="@+id/listview1"
+  				    android:background="@drawable/list_bg"
+  				    android:layout_width="fill_parent"
+  				    android:layout_height="fill_parent"
+  				    android:divider="#C1CDCD"
+  					android:dividerHeight="1px" 
+  				    android:cacheColorHint="#00000000" />
+
+  				
+  			</LinearLayout>
+  			
+  			<LinearLayout android:id="@+id/list2"	
+  				android:layout_width="fill_parent"
+  				android:layout_height="fill_parent"
+  				android:orientation="vertical"
+  				>
+
+  				<ListView
+  				    android:id="@+id/listview2"
+  				    android:background="@drawable/list_bg"
+  				    android:layout_width="fill_parent"
+  				    android:layout_height="fill_parent"
+  				    android:divider="#C1CDCD"
+  					android:dividerHeight="1px" 
+  				    android:cacheColorHint="#00000000" >
+
+  				</ListView> 
+  				
+  			</LinearLayout>
+  			
+			<LinearLayout android:id="@+id/list3"	
+  				android:layout_width="fill_parent"
+  				android:layout_height="fill_parent"
+  				android:orientation="vertical"
+  				>
+
+  				<ListView
+  				    android:id="@+id/listview3"
+  				    android:background="@drawable/list_bg"
+  				    android:layout_width="fill_parent"
+  				    android:layout_height="fill_parent"
+  				    android:divider="#C1CDCD"
+  					android:dividerHeight="1px" 
+  				    android:cacheColorHint="#00000000" >
+
+  				</ListView> 
+  				
+  			</LinearLayout>
+  			
+			<LinearLayout android:id="@+id/list4"	
+  				android:layout_width="fill_parent"
+  				android:layout_height="fill_parent"
+  				android:orientation="vertical"
+  				>
+
+  				<ListView
+  				    android:id="@+id/listview4"
+  				    android:background="@drawable/list_bg"
+  				    android:layout_width="fill_parent"
+  				    android:layout_height="fill_parent"
+  				    android:divider="#C1CDCD"
+  					android:dividerHeight="1px" 
+  				    android:cacheColorHint="#00000000" >
+
+  				</ListView> 
+  				
+  			</LinearLayout>
+			
+			<LinearLayout android:id="@+id/list5"	
+  				android:layout_width="fill_parent"
+  				android:layout_height="fill_parent"
+  				android:orientation="vertical"
+  				>
+
+  				<ListView
+  				    android:id="@+id/listview5"
+  				    android:background="@drawable/list_bg"
+  				    android:layout_width="fill_parent"
+  				    android:layout_height="fill_parent"
+  				    android:divider="#C1CDCD"
+  					android:dividerHeight="1px" 
+  				    android:cacheColorHint="#00000000" >
+
+  				</ListView> 
+  				
+  			</LinearLayout>
+			
+			
+  			</FrameLayout>
+		</LinearLayout>
+	</TabHost>
+	
+    <LinearLayout 
+	    android:gravity="center" 
+    	android:layout_width="fill_parent"
+    	android:layout_height="50dp"
+    	android:layout_alignParentBottom="true"
+    	android:id="@+id/botbtn" 
+    	android:orientation="horizontal" >
+    	<Button
+      		android:id="@+id/notice"
+     		android:layout_width="fill_parent"
+ 		    android:layout_height="fill_parent"
+ 		    android:layout_weight="1"
+      		android:background="@drawable/bt1"
+      />
+    	<Button
+      		android:id="@+id/discuss"
+     		android:layout_width="fill_parent"
+ 		    android:layout_height="fill_parent"
+ 		    android:layout_weight="1"
+ 		    android:background="@drawable/bt2"
+      />
+    	<Button
+      		android:id="@+id/read"
+     		android:layout_width="fill_parent"
+ 		    android:layout_height="fill_parent"
+ 		    android:layout_weight="1"
+ 		    android:background="@drawable/bt3"
+      />
+    	<Button
+      		android:id="@+id/comment"
+     		android:layout_width="fill_parent"
+ 		    android:layout_height="fill_parent"
+ 		    android:layout_weight="1"
+ 		    android:background="@drawable/bt4"
+      />
+    	<Button
+      		android:id="@+id/setting"
+     		android:layout_width="fill_parent"
+ 		    android:layout_height="fill_parent"
+ 		    android:layout_weight="1"
+ 		    android:background="@drawable/bt5"
+      />
+     </LinearLayout>
+  	
+     </RelativeLayout>
+</LinearLayout>

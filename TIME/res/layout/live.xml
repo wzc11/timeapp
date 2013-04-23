@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#EAEAEA"
+    >
+    
+    
+     <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:src="@drawable/taoluntab"
+        android:scaleType="centerCrop"
+         />
+    <TabHost android:id="@id/android:tabhost"
+		android:layout_height="fill_parent"
+		android:layout_width="fill_parent"
+		>
+		<LinearLayout
+    		android:orientation="vertical"
+    		android:layout_width="fill_parent"
+    		android:layout_height="fill_parent"
+    		>
+    	
+    	
+  		<TabWidget android:id="@id/android:tabs"
+  			android:layout_height="wrap_content"
+  			android:layout_width="fill_parent"
+  			android:gravity="left"
+  			android:visibility="gone"
+  			/>
+  		
+    	<RelativeLayout
+    	    android:id="@+id/indextop"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="50dp" >
+       
+        <Button
+      		android:id="@+id/backbtn"
+     		android:layout_width="37dp"
+ 		    android:layout_height="35dp"
+ 		    android:layout_alignParentLeft="true"
+ 		    android:background="@drawable/back1"
+ 		    android:layout_centerVertical="true"
+      />
+        <RadioGroup 
+  		    android:layout_alignParentRight="true"
+  		    android:layout_marginRight="10dp"
+  		  
+  		    android:layout_centerVertical="true"
+            android:orientation="horizontal" 
+            android:id="@+id/main_radio" 
+            android:background="#00000000" 
+            android:layout_width="80dp" 
+            android:layout_height="30dp">
+         
+         <RadioButton 
+             	android:layout_width="fill_parent" 
+             	android:layout_height="fill_parent"
+                android:id="@+id/radio_button1" 
+                android:tag="radio_button1" 
+                android:background="@drawable/chattab"
+                android:button="@null"
+                android:layout_weight="1"
+          />
+
+         <RadioButton
+             android:id="@+id/radio_button2"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_weight="1"
+             android:background="@drawable/asktab"
+             android:button="@null"
+             android:tag="radio_button2" />
+
+  		  </RadioGroup>
+     </RelativeLayout>
+    
+  		
+  		
+  		
+  		<FrameLayout android:id="@id/android:tabcontent"
+  			android:layout_height="fill_parent"
+  			android:layout_width="fill_parent"
+  			
+  			> 
+  			
+			<LinearLayout android:id="@+id/list1"	
+  				android:layout_width="fill_parent"
+  				android:layout_height="fill_parent"
+  				android:orientation="vertical"
+  				android:background="#EAEAEA"
+  				>
+				 <TextView 
+				     android:id="@+id/chattop"
+       				 android:layout_width="fill_parent"
+       				 android:layout_height="wrap_content" 
+       				 android:textColor="#68838B"
+       				 android:textSize="20dp"
+       				 android:layout_margin="20dp"
+					></TextView>
+				 
+			    <RelativeLayout 
+				    android:layout_width="fill_parent"
+  					android:layout_height="fill_parent"
+  					android:orientation="vertical"
+  					android:background="#EAEAEA"
+				    >
+  				<ListView
+  				    android:id="@+id/listview1"
+  				    android:layout_width="fill_parent"
+  				    android:layout_height="fill_parent"
+  				    android:layout_marginLeft="20dp"
+   					android:layout_marginRight="20dp"
+   					android:layout_marginBottom="15dp"
+  				    android:layout_above="@+id/btmlay1"
+  				    android:transcriptMode="alwaysScroll" 
+  				    android:divider="#C1CDCD"
+  				    android:dividerHeight="1px"
+  				    android:cacheColorHint="#00000000">
+  				</ListView> 
+   				<RelativeLayout
+   				    android:id="@+id/btmlay1"
+    				android:layout_width="fill_parent"
+    				android:layout_height="50dp"
+    				android:background="@drawable/readtop"
+    				android:layout_alignParentBottom="true"
+    				android:orientation="horizontal"  >
+    				<EditText
+        				android:id="@+id/chatmessagetext"
+        				android:layout_width="fill_parent"
+        				android:layout_height="40dp"
+        				android:layout_centerVertical="true"
+        				android:layout_marginRight="10dp"
+        				android:layout_marginLeft="20dp"
+        				
+		   	 			android:focusableInTouchMode="true"
+        				android:layout_toLeftOf="@+id/chatsubmit"
+        				android:background="@drawable/editchat"
+        				android:hint="现场互动你的想法吧！"
+      				/>
+					<Button
+	    				android:id="@+id/chatsubmit" 
+						android:layout_width="50dp"
+						android:layout_height="40dp"
+						android:layout_marginRight="10dp" 		
+						android:layout_centerVertical="true"
+						android:layout_alignParentRight="true"
+						android:background="@drawable/sendbt"/>
+				</RelativeLayout>  	
+				
+			   </RelativeLayout>					
+  			</LinearLayout>
+  			
+  			<LinearLayout android:id="@+id/list2"	
+  				android:layout_width="fill_parent"
+  				android:layout_height="fill_parent"
+  				android:orientation="vertical"
+  				android:background="#EAEAEA"
+  				>
+				<TextView 
+				     android:id="@+id/asktop"
+       				 android:layout_width="fill_parent"
+       				 android:layout_height="wrap_content" 
+       				 android:textColor="#68838B"
+       				 android:textSize="20dp"
+       				 android:layout_margin="20dp"
+					></TextView>
+				<RelativeLayout 
+				    android:layout_width="fill_parent"
+  					android:layout_height="fill_parent"
+  					android:orientation="vertical"
+  					android:background="#EAEAEA"
+				    >
+  				<ListView
+  				    android:id="@+id/listview2"
+  				    android:layout_width="fill_parent"
+  				    android:layout_height="fill_parent"
+  				    android:layout_marginLeft="20dp"
+   					android:layout_marginRight="20dp"
+   					android:layout_marginBottom="15dp"
+  				    android:layout_above="@+id/btmlay"
+  				    android:transcriptMode="alwaysScroll" 
+  				    android:divider="#C1CDCD"
+  				    android:dividerHeight="1px"
+  				    android:cacheColorHint="#00000000" >
+  				</ListView> 
+  				<RelativeLayout
+  				    android:id="@+id/btmlay"
+    				android:layout_width="fill_parent"
+    				android:layout_height="50dp"
+    				android:background="@drawable/shurutab"
+    				android:layout_alignParentBottom="true"
+    				android:orientation="horizontal"  >
+    				<EditText
+        				android:id="@+id/askmessagetext"
+        				android:layout_width="fill_parent"
+        				android:layout_height="40dp"
+        				android:layout_centerVertical="true"
+        				android:layout_marginRight="10dp"
+        				android:layout_marginLeft="20dp"
+        				android:singleLine="true"
+        				
+		    			android:focusableInTouchMode="true"
+        				android:layout_toLeftOf="@+id/asksubmit"
+        				android:background="@drawable/editchat"
+        				android:hint="向嘉宾提问！"
+        				
+      				/>
+					<Button
+	    				android:id="@+id/asksubmit" 
+						android:layout_width="50dp"
+						android:layout_height="40dp" 	
+						android:layout_marginRight="10dp" 	
+						android:layout_centerVertical="true"
+						android:layout_alignParentRight="true"
+						android:background="@drawable/sendbt"
+		 				/>
+				</RelativeLayout>  	
+				
+			   </RelativeLayout>			
+  			</LinearLayout>
+		</FrameLayout>
+		</LinearLayout>
+	</TabHost>
+
+</RelativeLayout>

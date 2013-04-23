@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+<RelativeLayout
+        android:id="@+id/indextop"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"   
+       >   
+        <ImageView
+        
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:src="@drawable/shezhitab"
+        android:scaleType="centerCrop"
+         />
+        <Button
+      		android:id="@+id/backbtn"
+     		android:layout_width="37dp"
+ 		    android:layout_height="35dp"
+ 		    android:layout_alignParentLeft="true"
+ 		    android:background="@drawable/back1"
+ 		    android:layout_centerVertical="true"
+      />
+     </RelativeLayout>
+<RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_03"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:id="@+id/idmanager"
+		android:layout_width="fill_parent"
+       	android:layout_height="50dp" 
+       	android:textColor="#000000"
+       	android:textSize="20dp"
+       	android:text="账号管理"
+       	android:layout_margin="20dp"
+       	android:background="@drawable/setbg">
+	</TextView>
+    <LinearLayout 
+        android:id="@+id/setlist"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:background="@drawable/setbg"
+    android:layout_below="@id/idmanager"
+    android:orientation="vertical" >
+    <RelativeLayout
+    	android:layout_width="fill_parent"
+    	android:layout_height="40dp"
+    	android:orientation="horizontal" >
+         <TextView 
+		android:layout_width="fill_parent"
+       	android:layout_height="wrap_content" 
+       	android:textColor="#000000"
+       	android:textSize="20dp"
+       	android:text="消息推送"
+       	 android:layout_centerVertical="true"
+       	android:background="@null"
+	></TextView>
+         <Button
+            android:id="@+id/setbt1"
+            android:layout_alignParentRight="true"
+     		android:layout_width="50dp"
+ 		    android:layout_height="25dp"
+ 		    android:layout_centerVertical="true"
+      		android:background="@drawable/setbtn"
+      />
+    </RelativeLayout>
+    <View    
+        android:layout_height="1px"   
+        android:background="#D4D4D4"   
+        android:layout_width="fill_parent">  
+	</View>  
+    <RelativeLayout
+    	android:layout_width="fill_parent"
+    	android:layout_height="40dp"
+    	android:orientation="horizontal" >
+         <TextView 
+		android:layout_width="fill_parent"
+       	android:layout_height="wrap_content" 
+       	android:textColor="#000000"
+       	android:textSize="20dp"
+       	android:text="仅在wifi下更新"
+       	 android:layout_centerVertical="true"
+       	android:background="@null"
+	></TextView>
+         <Button
+            android:id="@+id/setbt2"
+            android:layout_alignParentRight="true"
+     		android:layout_width="50dp"
+ 		    android:layout_height="25dp"
+ 		    android:layout_centerVertical="true"
+      		android:background="@drawable/setbtn"
+      />
+    </RelativeLayout>
+    <View    
+        android:layout_height="1px"   
+        android:background="#D4D4D4"   
+        android:layout_width="fill_parent">  
+	</View>  
+    <RelativeLayout
+    	android:layout_width="fill_parent"
+    	android:layout_height="40dp"
+    	android:orientation="horizontal" >
+         <TextView 
+		android:layout_width="fill_parent"
+       	android:layout_height="wrap_content" 
+       	android:textColor="#000000"
+       	android:textSize="20dp"
+       	android:text="自动更新版本"
+       	 android:layout_centerVertical="true"
+       	android:background="@null"
+	></TextView>
+         <Button
+             android:id="@+id/setbt3"
+            android:layout_alignParentRight="true"
+     		android:layout_width="50dp"
+ 		    android:layout_height="25dp"
+ 		    android:layout_centerVertical="true"
+      		android:background="@drawable/setbtn"
+      />
+    </RelativeLayout>
+    </LinearLayout>
+     <TextView 
+       
+         android:layout_below="@id/setlist"
+		android:layout_width="fill_parent"
+       	android:layout_height="50dp" 
+       	android:textColor="#000000"
+       	android:textSize="20dp"
+       	android:text="关于"
+       	android:layout_margin="20dp"
+       	android:background="@drawable/setbg"
+	></TextView>
+</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#EAEAEA"
+    android:orientation="vertical" >
+    
+	<RelativeLayout
+        android:id="@+id/indextop"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"   
+       >   
+        <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:src="@drawable/yuedutab"
+        android:scaleType="centerCrop"
+         />
+        <Button
+      		android:id="@+id/backbtn"
+     		android:layout_width="37dp"
+ 		    android:layout_height="35dp"
+ 		    android:layout_alignParentLeft="true"
+ 		    android:background="@drawable/back1"
+ 		    android:layout_centerVertical="true"
+ 		    android:gravity="center_horizontal"
+      />
+         <Button
+            android:id="@+id/like"
+            android:layout_width="43dp"
+            android:layout_height="28dp"
+            android:layout_marginRight="7dp"
+         	android:layout_alignParentRight="true"
+         	android:layout_centerVertical="true"
+            android:background="@drawable/likebtn"
+             />
+     </RelativeLayout>
+   
+   	<Gallery
+            android:id="@+id/gallery"
+            android:layout_marginTop="10dp"
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:gravity="center_vertical|center_horizontal"
+            android:spacing="7dp" 
+           	
+            />
+
+	<RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    >
+
+	    <ScrollView
+	        android:layout_above="@+id/download"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_margin="10dp" >
+
+	        <LinearLayout
+	        
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:background="#EAEAEA"
+	            android:gravity="center"
+	            android:orientation="vertical" >
+
+	            <TextView
+	                android:id="@+id/topic"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:background="@drawable/list_bg"
+	                android:textColor="#000000"
+	                android:textScaleX="1.1"
+	                android:lineSpacingExtra="7dp"
+	                android:textSize="15dp" />
+
+	            <TextView
+	                android:id="@+id/lecturer"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="10dp"
+	                android:background="@drawable/list_bg"
+	                android:lineSpacingExtra="7dp"
+	                android:textColor="#000000"
+	                android:textScaleX="1.1"
+	                android:textSize="15dp" />
+
+	            <TextView
+	                android:id="@+id/detail"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="10dp"
+	                android:background="@drawable/list_bg"
+	                android:lineSpacingExtra="7dp"
+	                android:textColor="#000000"
+	                android:textScaleX="1.1"
+	                android:textSize="15dp" />
+	        </LinearLayout>
+	    </ScrollView>
+
+	    <Button
+	        android:id="@+id/download"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginBottom="15dp"
+	        android:visibility="gone"
+	        android:background="@drawable/download" />
+	    
+	</RelativeLayout>
+
+</LinearLayout>
